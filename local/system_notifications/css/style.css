@@ -1,0 +1,265 @@
+.subheading_sidebar-nav {
+  list-style: none;
+  font-family: 'roboto';
+  cursor: pointer; 
+}
+
+.notifications-dropdown {
+  position: absolute;
+  margin-top: -6px;
+  right: 48px;
+  top: 47%; 
+}
+
+.subheading {
+  background-color: white;
+  height: 47px !important; 
+}
+
+fieldset#id_hidde-id-element {
+  display: none; 
+}
+
+.action-control {
+  margin-left: 790px; 
+}
+
+.back-button {
+  margin-left: 10px; 
+}
+
+#menucourse-selection {
+  margin-left: 10px;
+  padding-left: 11px;
+  height: 35px;
+  width: 225px;
+  margin-top: 6px; 
+}
+
+.for-courseselection {
+  margin-left: 10px;
+  font-weight: normal; 
+}
+
+.header-notification {
+  border: solid 0.5px #ddd;
+  margin: 4px 10px 4px 18px;
+  padding: 8px 0px 15px 10px;
+  background-color: #e9e9e9;
+  height: 50px !important; 
+}
+
+.link-info {
+  margin-left: 21px;
+  font-size: 15px;
+  color: #00358b;
+  cursor: pointer; 
+}
+
+#add-event-rule {
+  margin-right: 31px;
+  font-size: 35px; 
+}
+
+.addrule {
+  font-size: 18px;
+  margin-left: 18px;
+  font-family: 'Open Sans', Helvetica, sans-serif; 
+}
+
+.event-rule {
+  background: #F7F7F8;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin-top: 17px;
+  width: 1085px;
+  margin-left: 22px; 
+}
+
+.event-rule a {
+  display: inline-block;
+  padding: 0px 10px; 
+}
+
+#plugin {
+  width: 100%; 
+}
+
+#new-event-popup h4 {
+  font-weight: normal;
+  margin-bottom: 0px; 
+}
+
+.er-input-required {
+  color: #f00; 
+}
+
+form .col-sm-6, form .col-sm-12 {
+  padding-bottom: 15px; 
+}
+
+.loader {
+  position: relative;
+  margin: 0 auto;
+  width: 100px; 
+}
+
+.loader:before {
+  content: '';
+  display: block;
+  padding-top: 100%; 
+}
+
+#lp-loading {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1050; 
+}
+
+#lp-loading span {
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  top: 50%; 
+}
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2; 
+}
+
+.showbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5%; 
+}
+
+.circular {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+}
+
+.path {
+  stroke: #fff;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round; 
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); 
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); 
+  } 
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0; 
+  }
+  
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px; 
+  } 
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0; 
+  }
+  
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px; 
+  }
+  
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px; 
+  } 
+}
+
+#floating-top-right {
+  z-index: 1050 !important; 
+}
+
+.mform fieldset {
+  margin-left: 0px;
+  margin-bottom: 0px; 
+}
+
+#edit_template_course_notifications fieldset .fcontainer{
+  margin-left:  10px;
+  margin-right: 10px;
+  margin-bottom:  15px;
+}
+
+.well{
+  margin-bottom: 0px;
+}
+
+.mform fieldset.collapsible legend a.fheader{
+  margin-left: 0px;
+}
+
+legend.notification_bg a.fheader{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+div#edit_template_course_notifications{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#edit_template_course_notifications .form-group.fitem.femptylabel .felement .form-group.fitem {
+    display: contents;
+}
+#region-main #user-notifications .alert.alert-block .notifysuccess {
+    position: unset;
+    margin-bottom: 0px;
+}

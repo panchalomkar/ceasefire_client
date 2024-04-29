@@ -1,0 +1,79 @@
+#frontpage_instructor_carousel_wrap {
+    max-width: 900px;
+    margin: auto
+}
+
+.frontpage-instructor-carousel {
+    position: absolute;
+    z-index: 10;
+    padding: 2rem 5rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem
+}
+
+@media(max-width:767px) {
+    .frontpage-instructor-carousel {
+        position: absolute;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+}
+body.old-frontpage .frontpage-instructor-carousel {
+    position: unset;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    text-align: left;
+    transform: unset;
+}
+.frontpage-instructor-carousel img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.instructor-carousel-image-caption {
+    font-style: normal;
+    font-size: 1.2rem !important;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.instructor-carousel-info {
+    font-size: 14px!important;
+}
+
+@media(max-width:767px) {
+    .instructor-carousel-image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+}
+
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}

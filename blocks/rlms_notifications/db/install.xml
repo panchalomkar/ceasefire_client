@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/rlms_notifications/db" VERSION="20141121" COMMENT="XMLDB file for Moodle blocks/rlms_notifications"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
+     
+     <TABLES>
+         <TABLE NAME="block_rlms_ntf" COMMENT="notifications table">
+             <FIELDS>
+                 <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                 <FIELD NAME="name" TYPE="char" LENGTH="70" NOTNULL="true" SEQUENCE="false"/>
+                 <FIELD NAME="template" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="the message template to be send" />
+                 <FIELD NAME="config" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="any configuration for this row in json format"/>
+                 <FIELD NAME="type" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" DEFAULT="cron" COMMENT="possible values: cron,event"/>
+             </FIELDS>
+             <KEYS>
+                 <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+             </KEYS>
+             <INDEXES>
+                 <INDEX NAME="unique_name" UNIQUE="true" FIELDS="name" COMMENT="the name should be unique"/>
+                 <INDEX NAME="type" UNIQUE="false" FIELDS="type" />
+             </INDEXES>
+         </TABLE>
+         
+         <TABLE NAME="block_rlms_ntf_settings" COMMENT="block_notifications_settings table to save the settings for each course">
+             <FIELDS>
+                 <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                 <FIELD NAME="course_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+                 <FIELD NAME="notification_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="ref to block_notifications.id"/>
+                 <FIELD NAME="enabled" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+                 <FIELD NAME="config" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="any configuration for this row in json format"/>
+                 <FIELD NAME="template" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="the message template to be send"/>
+             </FIELDS>
+             <KEYS>
+                 <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+             </KEYS>
+             <INDEXES>
+                 <INDEX NAME="course_id" UNIQUE="false" FIELDS="course_id" />
+                 <INDEX NAME="enabled" UNIQUE="false" FIELDS="enabled" />
+                 <INDEX NAME="unique" UNIQUE="true" FIELDS="course_id,notification_id" />
+             </INDEXES>
+         </TABLE>
+         
+         <TABLE NAME="block_rlms_ntf_log" COMMENT="This table contains the log">
+             <FIELDS>
+                 <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                 <FIELD NAME="settings_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="ref to notifications_settings.id"/>
+                 <FIELD NAME="status" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="1=OK, 2=FAILED"/>
+                 <FIELD NAME="created_on" TYPE="datetime" NOTNULL="true" SEQUENCE="false" />
+             </FIELDS>
+             <KEYS>
+                 <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+             </KEYS>
+             <INDEXES>
+                 <INDEX NAME="settings_id" UNIQUE="false" FIELDS="settings_id" />
+             </INDEXES>
+         </TABLE>
+         
+     </TABLES>
+</XMLDB>

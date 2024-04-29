@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/products/db" VERSION="20140724" COMMENT="XMLDB file for Moodle local/products"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="products_in_cart" COMMENT="This table keeps information about products added in cart.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The time of the course added in cart"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="The unique id for product added in cart."/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="userid" UNIQUE="false" FIELDS="userid"/>
+        <INDEX NAME="course" UNIQUE="false" FIELDS="course"/>
+        <INDEX NAME="useridcourse" UNIQUE="true" FIELDS="userid, course"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="billdesk_transaction" COMMENT="This table keeps information about products added in cart.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="courseids" TYPE="char" LENGTH="255" NOTNULL="true"  SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true"  SEQUENCE="false"/>
+        <FIELD NAME="amount" TYPE="number" LENGTH="10" DECIMALS="3" NOTNULL="true"  SEQUENCE="false"/>
+        <FIELD NAME="txn_reference_no" TYPE="char" LENGTH="255" NOTNULL="false"  SEQUENCE="false"/>
+         <FIELD NAME="bank_reference_no" TYPE="char" LENGTH="255" NOTNULL="false"  SEQUENCE="false"/>
+         <FIELD NAME="auth_status" TYPE="char" LENGTH="255" NOTNULL="false"  SEQUENCE="false"/> 
+         <FIELD NAME="error_status" TYPE="char" LENGTH="255" NOTNULL="false"  SEQUENCE="false"/> 
+         <FIELD NAME="error_description" TYPE="char" LENGTH="25" NOTNULL="false"  SEQUENCE="false"/> 
+         <FIELD NAME="status" TYPE="char" LENGTH="255" NOTNULL="false"  SEQUENCE="false"/> 
+        
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The time of the course added in cart"/>
+      </FIELDS>
+      <KEYS>
+          
+         
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="The unique id for product added in cart."/>
+      </KEYS>
+      
+    </TABLE>
+  </TABLES>
+</XMLDB>

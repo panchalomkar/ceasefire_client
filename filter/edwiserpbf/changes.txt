@@ -1,0 +1,7 @@
+CHANGES LOG
+
+Version 1.0.0
+=============
+
+Initial version of Edwiser Page Builder Filter plugin.
+It allows users add courses and categories blocks using Edwiser Page Builder plugin. 

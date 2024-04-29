@@ -1,0 +1,21 @@
+1.0.8 Add SCORM landing form support new window setting
+
+1.0.7 Prevent modal if listener for external window found
+
+1.0.6 Show activity info in the modal if not on course page
+
+1.0.5 Navigation bug fix
+
+1.0.4 Navigation bug fix
+
+1.0.3 Improve handling of editing changes
+
+1.0.2 Fix deprecated renderer in master branch
+
+1.0.1 Stable Release, fork from 3.9 branch
+
+1.0 Stable Release, bugs fixed, Video Time support added
+
+1.0 Beta1 Improve navigation and resource display
+
+1.0 Beta Intial release

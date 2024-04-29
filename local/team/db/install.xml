@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/team/db" VERSION="20180407" COMMENT="XMLDB file for Moodle local/team"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_team" COMMENT="maintain team data">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="cohortid" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="cohort id"/>
+        <FIELD NAME="cohortcreator" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="cohortcreator id"/>
+        <FIELD NAME="companyid" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Company id"/>
+        <FIELD NAME="departmentid" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Department id"/>
+        <FIELD NAME="status" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="mentor" TYPE="char" LENGTH="100" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="cohortindex" UNIQUE="true" FIELDS="cohortid"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

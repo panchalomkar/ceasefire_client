@@ -1,0 +1,15 @@
+body#page-local-team-index div#page-wrapper {
+    overflow: hidden;
+}
+
+body#page-local-team-index .team_table {
+    overflow: auto;
+    display: inline-block;
+    width: 100%;
+    height: 70vh;    
+}   
+
+
+body#page-local-team-index table#teams{
+	font-size: 12px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/rlmscourse_rating/db" VERSION="20190717" COMMENT="XMLDB file for Moodle local/course_rating"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+     <TABLE NAME="local_rlmscourse_rating" COMMENT="This table saves information about course rating given by student.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"  SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"  SEQUENCE="false"/>
+        <FIELD NAME="rating" TYPE= "int" LENGTH="10"  NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="timestamp" TYPE="int" LENGTH="11" NOTNULL="true" DEFAULT="0"  SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="The unique id."/>
+        <KEY NAME="foreignkey1" TYPE="foreign" FIELDS="courseid" REFTABLE="course" REFFIELDS="id" COMMENT="id from course table"/>
+        <KEY NAME="foreignkey2" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" COMMENT="id from user table"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

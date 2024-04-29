@@ -1,0 +1,46 @@
+<?php 
+$string['numericfield'] = 'Esto es un campo numérico.';
+$string['pluginname'] = 'Sede de la sesión ILT';
+$string['bu'] = 'ESTE';
+$string['location'] = 'Ubicación';
+$string['addlocation'] = 'Añade una ubicación';
+$string['classroom'] = 'Salón de clases';
+$string['capacity'] = 'Capacidad';
+$string['resource'] = 'Recurso';
+$string['addresource'] = 'Añadir recurso';
+$string['resourceqty'] = 'Cantidad de recursos';
+$string['missingbu'] = 'Falta BU';
+$string['id'] = 'Carné de identidad';
+$string['deletevenuemanangement'] = 'Eliminar lugar';
+$string['addvenuemanangement'] = 'Añadir nuevo lugar ILT';
+$string['venuemanangementlist'] = 'ILT Lista de lugares';
+$string['venuemanangementname'] = 'Sesión ILT Sede';
+$string['missinglocation'] = 'Ubicación perdida';
+$string['missingclassroom'] = 'Aula faltante';
+$string['missingcapacity'] = 'Capacidad faltante';
+$string['missingresource'] = 'Recurso faltante';
+$string['missingresourceqty'] = 'Cantidad de recursos faltantes';
+$string['venuemanangementcsv'] = 'Subir venuemanangement csv';
+$string['uploadusers'] = 'Subir venuemanangement';
+$string['uploaduserspreview'] = 'Subir vista previa de venuemanangement';
+$string['uuoptype'] = 'Tipo de carga';
+$string['uuoptype_addinc'] = 'Agregue todo, agregue el número a los nombres de usuario si es necesario';
+$string['uuoptype_addnew'] = 'Agregar nuevo solo, omitir los usuarios existentes';
+$string['uuoptype_addupdate'] = 'Añadir nuevos y actualizar usuarios existentes.';
+$string['uuoptype_update'] = 'Actualizar solo los usuarios existentes';
+$string['uploadusersresult'] = 'Subir resultados de venuemanangement';
+$string['uploadusers_help'] = 'Los usuarios pueden ser cargados (y opcionalmente inscritos en cursos) a través de un archivo de texto. El formato del archivo debe ser el siguiente: * Cada línea del archivo contiene un registro * Cada registro es una serie de datos separados por comas (u otros delimitadores) * El primer registro contiene una lista de nombres de campo que definen el formato del resto del archivo * Los nombres de campo requeridos son idusuario, venuemanangementno, emitido, validupto';
+$string['rowpreviewnum'] = 'Vista previa de filas';
+$string['csvdelimiter'] = 'Delimitador CSV';
+$string['encoding'] = 'Codificación';
+$string['usersupdated'] = 'Usuarios actualizados';
+$string['errors'] = 'Los errores';
+$string['uucsvline'] = 'Línea CSV';
+$string['venuemanangement:managevenuemanangement'] = 'Administrar lugar';
+$string['venuemanangement:viewvenuemanangementlist'] = 'Ver las listas de lugares de ILT';
+$string['venuemanangement:uploadvenuemanangement'] = 'Subir ILT Venue a través de CSV';
+$string['local/venuemanangement:managevenuemanangement'] = 'Administrar el lugar de ILT';
+$string['local/venuemanangement:viewvenuemanangementlist'] = 'Ver las listas de lugares de ILT';
+$string['local/venuemanangement:uploadvenuemanangement'] = 'Subir ILT Venue a través de CSV';
+
+

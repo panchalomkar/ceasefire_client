@@ -1,0 +1,514 @@
+/*JaimeT-People*/
+/*
+.bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour {
+    width: 251px;
+    height: 278px;
+    border-radius: 4px;
+    border: solid 1px rgba(27, 162, 221, 0.56);
+    background-color: #ffffff; 
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(25, 162, 221, 1);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(25, 162, 221, 1);
+	box-shadow: 0px 0px 4px 0px rgba(25, 162, 221, 1);
+	padding-top: 1px;
+    .table-condensed
+    {
+        width: 240px;
+        height: 265px;  
+        padding-left: 15px;
+        margin-left:15px;
+        float: right;
+    }
+    table thead tr
+    {
+        text-align: center !important;
+    }
+    table thead tr:nth-child(2)
+    {
+        background-color: lighten($brand-primary, 45%);
+        padding:5px;
+        color:$brand-primary;
+        
+    }
+    table thead tr:nth-child(2) th
+    {
+        padding:10px 10px 10px 9px;
+        text-align:center;
+        font-weight: 300;
+    }
+    table tbody tr div
+    {
+        padding: 0px;
+        text-align: center;
+        font-size: 15px;
+	    font-weight: 300;
+	    color: #212529;
+	    cursor: pointer;  
+    }
+    table thead tr:nth-child(1) th
+    {
+        text-align: center;
+        padding: 8px;
+        font-size: 16px;
+        color:#465b65;
+        background: #f5f7fe;
+        font-weight: 500;
+    }
+    table thead tr:nth-child(1) .prev, .next
+    {
+        color:#1ba2dd !important;
+    }
+    ul.list-unstyled
+    {
+    	padding-right: 3px;
+    }
+    .day.old.weekend div , .day.new div
+    {
+    color: #99abb4 !important;
+	}
+}
+
+.bootstrap-datetimepicker-widget{
+    table
+    {
+        td
+        {
+            span
+            {
+                display: inline-block;
+                width: 54px;
+                height: 54px;
+                line-height: 54px;
+                margin: 2px 1.5px;
+                cursor: pointer;
+                border-radius: 4px;
+                padding-left: 17px;
+            }
+            span:hover
+            {
+                background-color: $brand-primary;
+                padding-left: 17px;
+                color: choose-contrast-color(darken($brand-primary, 25%)) !important;    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    #page-local-people-index 
+    {
+        div.settings-menu {
+            height: 0px!important;
+        }
+        h2.title-coursecoursewizard {
+            margin-top: 13px;
+        }
+        .breadcrumb-nav {
+            padding-left: 15px;
+        }
+    }
+}
+
+#page-local-people-index{
+    :target{
+        padding-top: 0px!important;
+        margin-top: 0px!important;
+    }
+    div.card-block.content-shadow{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    h2.title-coursecoursewizard{
+        margin-bottom: 5px;
+    }
+    p.description_newcourse{
+        margin-bottom: 23px;
+    }
+    div.search-filter-buttons{
+        div.header-search{
+            padding-bottom: 22px;
+            div.custom-search-form{
+                i.men-search-phx{
+                    position: absolute;
+                    z-index: 4;
+                    top: 0px;
+                    left: 19px;
+                    font-size: 16px;
+                    margin: auto;
+                    bottom: 0px;
+                    height: 16px;
+                    width: 16px;
+                }
+                input#txt{
+                    border-radius: 20.5px;
+                    padding-left: 48px;
+                }
+                span.input-group-btn{
+                    margin-left: 10px;
+                }
+            }
+            div.searchbox{
+                padding-bottom: 7px;
+            }
+            div.content-companies{
+                select#menucompany{
+                    width: 100%;
+                }
+            }
+        }
+        div.report-left-block-acordeon{
+            div.filterpeople{
+                background-color: #fbfcff;
+                padding: 18px 15px;
+                div.aply-filtter{
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                } 
+                div.content-filtter{
+                    div.filterslist{
+                        margin-bottom: 6px;
+                        border-radius: 3px;
+                        box-shadow: 0 2px 6px 0 rgba(58, 110, 205, 0.16);
+                        background-color: #ffffff;
+                        select{
+                            width: 100%;
+                        }
+                    }
+                    div.filterslist{
+                        div.panel-heading:hover{
+                            h5.panel-title{
+                                a.plms-reports-dropdown{
+                                    background-color: $brand-primary;
+                                    color: #fff;
+                                    i.reports-dropdown{
+                                        color: #fff;
+                                    }
+                                }
+                            }      
+                        }
+                    }
+                    div.panel-heading{
+                        h5.panel-title{
+                            margin-bottom: 0px;
+                            a{
+                                height: 49px;
+                                display: flex;
+                                align-items: center;
+                                font-size: 13px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                padding-right: 18px;
+                                padding-left: 18px;
+                                color: #607d8b;
+                                text-decoration: none;
+                                font-weight: 400;
+                                i.reports-dropdown{
+                                    position: absolute;
+                                    right: 18px;
+                                    font-size: 18px;
+                                    color: #94b7c3;
+                                }
+                            }
+                        }
+                    }
+                    div.date-filters{
+                        div.filterslist{
+                            div.date-time{
+                                div.input-group{
+                                    input{
+                                        width: 75%;
+                                    }
+                                    div.input-group-prepend{
+                                        span.input-group-text{
+                                            width: 36px;
+                                            height: 36px;
+                                            border-radius: 3px;
+                                            border: solid 1px rgba(27, 162, 221, 0.56);
+                                            display: inline-flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            vertical-align: bottom;
+                                        }
+                                        span.input-group-text:focus{
+                                            box-shadow: $inputsshadow;
+                                        }
+                                    }
+                                }
+                            }
+                            form#form-lastmodified{
+                                div.date-time{
+                                    label{
+                                        margin-bottom: 0px;
+                                        padding-bottom: 0px;
+                                    }
+                                }
+                            }
+                        }
+                        #form-firstaccessd div.checkbox{
+                            margin-left: 0px !important;
+                        }
+                        div.checkbox{
+                            margin-left: 16px;
+                        }
+                    }
+                }
+            }
+            div.radio-filters{
+                div.filterslist{
+                    div.panel-collapse{
+                        div.searchbox{
+                            form{
+                                div.pad-ver{
+                                    padding-bottom: 12px;
+                                    display: inline-block;
+                                    padding-top: 12px;
+                                }
+                                label.form-check-label{
+                                    padding-bottom: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.option-filters{
+                div.filterslist{
+                    div.select-some{
+                        margin-top: 0px;
+                        margin-bottom: 8px !important;
+                    }
+                }
+                form#form-courserole div.form-group{
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                }
+                form#form-country,
+                form#form-city{
+                    div.form-group{
+                        margin: 0px;
+                    }
+                }
+            }
+            div.filterslist{
+                form#form-userfullname,
+                form#form-email,
+                form#form-username{
+                    div.form-group{
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+    div.table-filters{
+        div.content-form{
+            padding-bottom: 30px;
+            form#form-bulk-actions{
+                div.content-actions{
+                    margin-bottom: 33px;
+                    a{
+                        padding-right: 5px !important;
+                        padding-left: 5px !important;
+                        width: 121px;
+                        margin-right: 3px;
+                        margin-bottom: 12px;
+                    }
+                }
+                table.table-people{
+                    thead{
+                        tr{
+                            th{
+                                border-top: 0;
+                                padding-bottom: 20px;
+                                color: $brand-primary;
+                                font-weight: 300;
+                                a{
+                                    color: $brand-primary;
+                                    text-decoration: none;
+                                    display: flex;
+                                    align-items: center;
+                                    i{
+                                        padding-left: 3px;
+                                    }
+                                    i.men-icon-phsortingup,
+                                    i.men-icon-phsortingdown{
+                                        font-size: 4px;
+                                        font-weight: 700;
+                                    }
+                                    i.men-icon-phsorting{
+                                        font-weight: 400;
+                                        font-size: 10px;
+                                        color: #768c94;
+                                    }
+                                }
+                                a:focus{
+                                    box-shadow: none !important;
+                                }
+                            }
+                            th.lastcol{
+                                text-align: right;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            border-bottom: 2px solid #f3f1f1;
+                            td{
+                                padding: 5px 9px!important;
+                                color: #465b65;
+                                font-weight: 300;
+                                vertical-align: inherit;
+                                a{
+                                    color: #465b65;
+                                }
+                            }
+                            td.lastcol{
+                                text-align: right;
+                            }
+                        }
+                        tr:hover{
+                            box-shadow: 0 2px 4px 0 rgba(35, 77, 103, 0.21);
+                            background-color: #fbfcff;
+                        }
+                    }
+                }
+            }
+        }
+        div.options-table{
+            i{
+                color: #b3cdd6;
+            }
+            a:after{
+                display: none;
+            }
+            div.dropdown-menu{
+                width: 160px;
+                transform: none !important;
+                height: 119px;
+                border-radius: 3px;
+                box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.11);
+                background-color: #ffffff;
+                left: inherit !important;
+                right: 0px !important;
+                transform: none !important;
+                top: inherit !important;
+                padding: 8px 7px;
+                margin-top: 0px !important;
+                a{
+                    height: 35px;
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    color: #465b65;
+                    padding-bottom: 0px;
+                    padding-top: 0px;
+                    padding-left: 12px
+                }
+                a:hover{
+                    background-color: #f5f7fe;
+                    color: $brand-primary !important;
+                }
+            }
+        }
+        div.filters-list{
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 5px;
+            div.reset{
+                display: inline-flex;
+                align-items: center;
+                margin-right: 5px;
+            }
+        }
+    }
+    div.pagination-content{
+        display: flex;
+        justify-content: flex-end;
+        form.recordsperpage{
+            padding-right: 32px;
+        }
+        nav{
+            ul.pagination{
+                margin: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+    div.total-records{
+        position: relative;
+        float: left;
+        top: -14px;
+        left: 23px;
+    }
+    div.record-page{
+        padding-right: 8px;
+        span{
+            font-weight: 500;
+        }
+    }
+    div.startdate,
+    div.enddate{
+        a.visibleifjs{
+            cursor: pointer;
+        }
+    }
+    form#EnrolForm{
+        span.select2-selection{
+            height: 100% !important;
+            ul.select2-selection__rendered{
+                li{
+                    input.select2-search__field:focus{
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+        input#startdate + div.bootstrap-datetimepicker-widget {
+            top: 0 !important;
+        }
+        input#enddate + div.bootstrap-datetimepicker-widget {
+            top: 0 !important;
+        }
+    }
+    #SearchParameters{
+        a.reset{
+            cursor: pointer;
+        }
+    }
+    .plms-reports-dropdown.active{
+        background-color: $brand-primary !important;
+        color : #fff !important;
+    }
+    .plms-reports-dropdown.active .reports-dropdown{
+        color : #fff !important;
+    }
+}
+
+table.table-people{
+    .table-active>th,
+    .table-active,
+    .table-active>td{
+        background: none !important;
+    }
+}
+ 
+form#mform1 div.bootstrap-datetimepicker-widget .day.disabled div {
+    color: grey;
+}
+
+#page-local-people-index button#send {
+    min-width: 125px !important;
+}
+
+@media (max-width: 1440px){
+    #page-local-people-index button#send {
+        min-width: 95px !important;
+    }
+}
+
+@media (max-width: 1199px){
+    #page-local-people-index button#send {
+        min-width: 125px !important;
+    }
+}*/

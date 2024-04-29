@@ -1,0 +1,281 @@
+{
+    "main":[
+        {
+            "name":"maincontent",
+            "mods": [
+                {
+                    "name": "forum",
+                    "icon": "fa fa-folder-o",
+                    "hiden": 0
+                },
+                {
+                    "name": "hvp",
+                    "icon": "fa fa-folder-o",
+                    "hiden": 0
+                },
+                {
+                    "name": "quiz",
+                    "icon": "fa fa-check-circle",
+                    "hiden": 0
+                },
+                {
+                    "name": "scorm",
+                    "icon": "wid wid-icon-scorm",
+                    "hiden": 0
+                },
+                {
+                    "name": "videofile",
+                    "icon": "wid wid-icon-scorm",
+                    "hiden": 0
+                }
+            ]
+        },
+        {
+            "name":"assessment",
+            "mods": [
+               {
+                    "name": "assign",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "workshop",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                }
+            ]
+        },
+        {
+            "name":"classroomtraining",
+            "mods": [
+                {
+                    "name": "attendance",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "attendanceregister",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "facetoface",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "trainingevent",
+                    "icon": "fa fa-folder",
+                    "hiden": 1
+                }
+            ]
+        },
+        {
+            "name":"elearning",
+            "mods": [
+                {
+                    "name": "book",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "lti",
+                    "icon": "fa fa-folder",
+                    "hiden": 1
+                },
+                {
+                    "name": "resource",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "folder",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "glossary",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "imscp",
+                    "icon": "fa fa-folder",
+                    "hiden": 1
+                },
+                {
+                    "name": "lesson",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "page",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                }
+            ]
+        },
+        {
+            "name":"feedback",
+            "mods": [
+                {
+                    "name": "threesixo",
+                    "icon": "fa fa-tasks",
+                    "hiden": 1
+                },
+                {
+                    "name": "certificate",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "choice",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "customcert",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "questionnaire",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "survey",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                }
+            ]
+        },
+        {
+            "name":"gamification",
+            "mods": [
+                {
+                    "hiden": 0,
+                    "type": "bookquiz",
+                    "name": "game",
+                    "icon": "fa fa-folder"
+                },
+                {
+                    "hiden": 0,
+                    "type": "cross",
+                    "name": "game",
+                    "icon": "fa fa-folder"
+                  },
+                  {
+                    "hiden": 0,
+                    "type": "cryptex",
+                    "name": "game",
+                    "icon": "fa fa-folder"
+                  },
+                  {
+                    "hiden": 0,
+                    "type": "hangman",
+                    "name": "game",
+                    "icon": "fa fa-folder"
+                  },
+                  {
+                    "hiden": 0,
+                    "type": "hiddenpicture",
+                    "name": "game",
+                    "icon": "fa fa-folder"
+                  },
+                  {
+                    "hiden": 0,
+                    "type": "millionaire",
+                    "name": "game",
+                    "icon": "fa fa-folder"
+                  },
+                  {
+                    "hiden": 0,
+                    "type": "snakes",
+                    "name": "game",
+                    "icon": "fa fa-folder"
+                  },
+                  {
+                    "hiden": 0,
+                    "type": "sudoku",
+                    "name": "game",
+                    "icon": "fa fa-folder"
+                  }
+            ]
+        },
+        {
+            "name":"sociallearning",
+            "mods": [
+                {
+                    "name": "chat",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "wiki",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                }
+            ]
+        },
+        {
+            "name":"tools",
+            "mods": [
+                {
+                    "name": "mindmap",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "url",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                }
+            ]
+        },
+        {
+            "name":"virtualclass",
+            "mods": [
+                {
+                    "name": "adobeconnect",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                    {
+                    "name": "gotomeeting",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "gotowebinar",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "webexactivity",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                },
+                {
+                    "name": "zoom",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                }
+            ]
+        },
+        {
+            "name":"miscellaneous",
+            "mods": [
+                {
+                    "name": "checklist",
+                    "icon": "fa fa-folder",
+                    "hiden": 0
+                }
+            ]
+        }
+    ]
+}

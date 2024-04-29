@@ -1,0 +1,205 @@
+.block.block_courses_statistics .progressbar {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 10px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+}
+
+.block.block_courses_statistics .progressbar .progress-bar, .progressbar .progress-bar2 {
+    animation: animate-positive 2s;
+    border-radius: 50px;
+    box-shadow: none;
+    left: 1px;
+    position: absolute;
+    top: 0;
+}
+
+.block.block_courses_statistics .progressbar .progress-value {
+    bottom: -35px;
+    color: #555;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    right: 27px;
+}
+
+.block.block_courses_statistics .progressbar .progress1, .progressbar .progress2 {
+    background: rgba(216, 216, 216, 0.55);
+    border-radius: 50px;
+    height: 6px!important;
+    position: relative;
+    width: 100%;
+}
+
+.block.block_courses_statistics div.cont-students i{
+    font-size: 12px;
+    color: #697B92;   
+}
+
+.block.block_courses_statistics .element-right .progressbar .progress1, .element-right .progressbar .progress2 {
+    background: rgba(216, 216, 216, 0.55);
+    border-radius: 50px;
+    height: 2px;
+    position: relative;
+    width: 100%;
+}
+
+.block.block_courses_statistics .progressbar .progress2 {
+    margin-left: 7px;
+}
+
+.block.block_courses_statistics bold {
+    font-weight: 700;
+}
+
+.block.block_courses_statistics div.element-groups.row div.upline{
+    margin-top: -40px;
+}
+
+.block.block_courses_statistics .element-groups i.wid.wid-icon-phbook {
+    color: #3cd0cd;
+}
+
+.block.block_courses_statistics .col-md-3.col-lg-3.col-sm-3.col-xs-3, .col-md-4.col-lg-4.col-sm-4.col-xs-4 {
+    padding-left: 0px;
+    padding-right: 0;
+}
+
+.block.block_courses_statistics .element-groups p + span {
+    text-transform: capitalize;
+}
+
+.block.block_courses_statistics p.aling-left {
+    text-align: left;
+}
+.block.block_courses_statistics a.aling-left {
+    text-align: left;
+    float: left;
+    text-transform: capitalize;
+}
+
+.block.block_courses_statistics .icons-left i.wid.wid-icon-phbook {
+    color: #4386df;
+}
+
+.block.block_courses_statistics .element-groups a.view-course{
+    color: #6B6B6B;
+    font-size: 13px;
+}
+
+.block.block_courses_statistics p.count-view {
+    padding-right: 5px;
+    font-weight: 400;
+    width: 40px;
+    color: #697B92;
+}
+
+.aling-right{
+    text-align: right;
+}
+
+.block.block_courses_statistics .element-groups div.course-name a {
+    color: #212121;
+    font-size: 13px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+}
+
+.block.block_courses_statistics .element-groups a:hover {
+    text-decoration:none;
+}
+
+@media only screen and (max-width: 844px) {
+    .block.block_courses_statistics body#page-site-index div#page-content .col-xs-12{
+        padding-right: 10px!important;
+    }
+    .block.block_courses_statistics .course-overview{
+        margin-bottom: 60px;
+
+    }
+    .block.block_courses_statistics .col-md-6.col-lg-6.col-sm-12.col-xs-12.left.margin-bottom {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 990px) and (max-width: 1050px) {
+    .block.block_courses_statistics .progressbar {    
+        visibility: hidden;    
+        display: none;
+    }
+    .block.block_courses_statistics p.aling-right.media {
+        margin-left: -40px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 990px) {
+    .block.block_courses_statistics .progressbar {    
+        visibility: hidden;    
+        display: none;
+    }
+    .block.block_courses_statistics p.aling-right.media {
+        margin-left: -40px;
+    }
+}
+
+.block.block_courses_statistics.card.m-b-2 a.aling-left {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+}
+
+.block.block_courses_statistics.card.m-b-2 .perfect-padding {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.block.block_courses_statistics .element-groups h6, .h6 {
+    margin-bottom: 10px;
+}
+
+a.view-course{
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    div#second-section,
+    div.secont-content{
+        padding-left: 0px !important;
+    }
+    div.element-groups{
+        margin-bottom: 12px;
+    }
+    div.first-section{
+        padding-right: 0px !important;
+    }
+}
+
+.block.block_courses_statistics .upline hr {
+    margin-top: -6px;
+}
+
+.block.block_courses_statistics div#first-section div.element-groups:before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 5px;
+    background: #C4C4C4;
+}
+
+.block_courses_statistics  .row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}

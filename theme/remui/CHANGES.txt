@@ -1,0 +1,41 @@
+Change Log:
+===========
+
+Version 3.11.5
+
+Feature - Four new icons design variation added
+Feature - Moodle forms elements design variation added
+Tweak - Settings grouped as per page type in Edwiser RemUI settings
+Tweak - Removed overridden activity icon images from theme, using core icon images now.
+Fix - Duplicate tags issue on course archive page fixed
+Fix - Restricted sections indexing issue on enrolment page fixed.
+Fix - Enrolment page styling issue fixed.
+Fix - Profile field issue when locked fixed.
+
+Version 3.11.4
+
+Fix - Error on installation with tours.
+
+Version 3.11.3
+
+Fix - Profile page, Data protection breach due to not adhering to user policy settings.
+Fix - Quiz width issue in mobile
+Fix - Messages were not preserving spaces.
+Feature - Added new tour for acknowledgement of Edwiser Page builder Features.
+
+Version 3.11.2
+
+Fix - Badges are not clickable on profile page.
+Fix - Hiding Navigation items setting from customizer not working.
+Fix - Course Stats negative value issue.
+Feature - In Product Notification, which will show notifications to admins about enrolments and completion in past month.
+
+Version 3.11.1
+
+Fix - Forgot password link is not visible on login page.
+Feature - Atto_fullscreen plugin support provided.
+Feature - Added Custom Modal to show Edwiser Page builder blocks.
+
+Version 3.11.0
+
+Initial Version of Edwiser RemUI, made compatible with latest version of Moodle 3.11.

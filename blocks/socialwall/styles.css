@@ -1,0 +1,16 @@
+div.block_socialwall div.header div.title h2:before{
+    content: "\f044";
+    font: normal normal normal 14px/1 slmsWidgets;
+}
+
+.block_socialwall{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset !important;
+    background: #fff;
+}
+
+.block_socialwall div.header div.title{
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    width: 98%;
+    margin-left: 12px;
+    padding: 1px 0 10px 0;
+}

@@ -1,0 +1,137 @@
+	.block .content .userpicture{
+    height: inherit;
+    width: inherit;
+}
+.myteamblock .cell{
+    vertical-align:middle !important;
+}
+.progress,
+.table{
+    margin: 0 !important;
+}
+div.progress{
+	cursor:pointer;
+}
+
+#myprogress-legend{
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+/*.legend_pie {
+    font-size: 11px;
+    margin-top: 15px;
+    position: absolute;
+    width: 100%;
+    margin-left: -13px;
+    text-align: center;
+}*/
+
+#myprogress-legend a{
+	display:block;
+	text-align:center;
+}
+/**
+* just comment the span styles
+* @autor Hugo S.
+* @since 18/06/2018
+* @rlms
+* @ticket 21
+*/
+/*
+#myprogress-legend a span{
+	display:inline-block;
+	width:50px;
+	height:15px;
+	margin-right:5px;
+}
+*/
+.block_rlms_myprogress .end-block {
+    display: none !important;
+}
+
+.block_rlms_myprogress h2{    
+    color: gray;
+}
+
+.block_rlms_myprogress h2:before {
+    content: "\f015";
+    font: normal normal normal 14px/1 PlmsWidgets;
+}
+
+.block_rlms_myprogress{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset !important;
+    background: #fff;
+}
+
+.block_rlms_myprogress div.header div.title{
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    width: 98%;
+    margin-left: 12px;
+    padding: 1px 0 10px 0;
+}
+
+#page-course-view-rlmstabs #region-main-wrap .region-content .block_rlms_myprogress .header .title h2:before {
+    top: 34px;
+}
+
+.right-column .block_rlms_myprogress .content .container-content {
+    padding-left: 9px !important;
+}
+
+#myprogress-legend .legend_bars {
+    height: 15px !important;
+}
+
+.block_rlms_myprogress div.card-text.content{
+    position: relative;
+}
+
+#plms-my-progress-container div.highcharts-container{
+    text-align: center !important;
+    width: 100% !important;
+}
+
+div#myprogress-legend a{
+    width: 12%;
+    display: inline-block;
+    height: 12px;
+}
+
+.block_rlms_myprogress section.blocks-column div#myprogress-legend{
+    position: absolute;
+    bottom: 20px;
+}
+
+section.has-blocks div#myprogress-legend{
+    margin: 0px;
+    text-align: center;
+}
+
+section.has-blocks div#myprogress-legend div.contend-legend{
+    width: 25%;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section.has-blocks div#myprogress-legend div.contend-legend a{
+    width: 100%;
+}
+
+.block_rlms_myprogress div#myprogress-legend div.contend-legend{
+    display: flex;
+    align-items: center;
+}
+
+.block_rlms_myprogress div.legend_pie{
+    padding-left: 12px;
+}
+
+@media (max-width: 544px){
+    section.has-blocks div#myprogress-legend div.contend-legend{
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

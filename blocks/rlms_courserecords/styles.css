@@ -1,0 +1,167 @@
+.block_rlms_courserecords .generaltable .header{
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.block_rlms_courserecords .generaltable .header .span-header{
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 300;
+  color: #768c94;
+}
+
+.block_rlms_courserecords .generaltable .header .span-header{
+  display: inline-block;
+}
+  @media screen and (max-width: 556px) 
+  {
+    .block_rlms_courserecords .generaltable .header .span-header
+    {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 60px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+    @media screen and (max-width: 543px) 
+  {
+    .block_rlms_courserecords .generaltable .header .span-header:nth-child(2) 
+    {
+      display:none;
+    }
+    .block_rlms_courserecords .generaltable .aspan.certificate:nth-child(2) 
+        {
+      display:none;
+    }
+      .generaltable_rlms i.wid.wid-icon-phcertificate
+    {
+      display:none;
+    }
+     .block_rlms_courserecords .certificate_hide 
+     {
+    display:none !important;
+    }
+    .block_rlms_courserecords .generaltable .header .span-header
+    {
+      width: 70px;
+    }
+    .block_rlms_courserecords .generaltable .item .cell
+    {
+      width: 70px;
+      display: inline-block;
+    }
+
+  }
+  @media screen and (max-width: 389px) 
+  {
+    .block_rlms_courserecords .generaltable .header .span-header {
+    width: 70px;
+    }
+  }
+    @media screen and (max-width: 340px) 
+  {
+    .block_rlms_courserecords .generaltable .header .span-header {
+    width: 50px;
+    }
+  }
+
+.block_rlms_courserecords .generaltable .item{
+  background-color: #fbfcff;
+  height: 49px;
+  padding: 1.4rem 0;
+  position: relative;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.block_rlms_courserecords .generaltable .item a,.block_rlms_courserecords .generaltable .item .aspan{
+  color: #1ba2dd;
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+}
+
+.block_rlms_courserecords .generaltable .item .aspan{
+  color: rgba(118, 140, 148, 0.85);
+}
+.block_rlms_courserecords .generaltable .item .completed_dates{
+  letter-spacing: -0.4px;
+  color: #768c94;
+}
+
+.block_rlms_courserecords .generaltable .item .coursename a{
+  color: #465b65;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.block_rlms_courserecords .generaltable .item a i,.block_rlms_courserecords .generaltable i{
+  font-size: 19px;
+}
+.block_rlms_courserecords .generaltable div.items-cell{
+  display: flex;
+  align-items: center;
+}
+
+.block_rlms_courserecords .generaltable div.items-cell span.aspan{
+  padding-left: 14px;
+}
+
+.block_rlms_courserecords .generaltable .item .cell{
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: -0.4px;
+  color: #768c94;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 2rem;
+}
+
+.block_rlms_courserecords .generaltable .certificate{
+  padding-left: 2rem;
+}
+
+.block_rlms_courserecords .generaltable .item::before{
+  content: ' ';
+  height: 49px;
+  width: 3px;
+  background-color: #dbecf5;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.block_rlms_courserecords .generaltable .item:hover{
+  background-color: #ffffff;
+  box-shadow: 0 2px 9px 0 rgba(58, 110, 205, 0.16);
+}
+
+.block_rlms_courserecords .generaltable .item:hover::before{
+  background-color: #1ba2dd;
+}
+
+.block_rlms_courserecords .card-text.content{
+  overflow: hidden !important;
+}
+.block_rlms_courserecords .items-content{
+  padding: 0 4rem;
+  height: 174px;
+}
+
+.block_rlms_courserecords div.rlms-course-records-table div.header{
+  padding-bottom: 10px!important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+}
+
+.block_rlms_courserecords div.rlms-course-records-table div.items-content{
+  height: 215px!important;
+}

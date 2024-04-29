@@ -1,0 +1,44 @@
+{
+
+	"data":"icon fa fa-database",
+	"certificate":"icon fa fa-certificate",
+	"customcert":"icon fa fa-certificate",
+	"chat":"icon fa fa-comments ",
+	"choice":"icon fa fa-list-ul ",
+	"quiz":"icon fa fa-puzzle-piece ",
+	"feedback":"icon fa fa-bar-chart ",
+	"questionnaire":"icon fa fa-list-ol ",
+	"survey":"icon fa fa-bar-chart ",
+	"forum":"icon wid wid-icon-forum ",
+	"glossary":"icon fa fa-globe ",
+	"lti":"icon fa fa-share-alt-square",
+	"hvp":"icon wid wid-icon-interactive",
+	"iomadcertificate":"icon fa fa-certificate ",
+	"game": {
+	    "bookquiz": "icon fa fa-puzzle-piece",
+	    "hangman": "icon wid wid-icon-hangman",
+	    "snakes": "icon wid wid-icon-snaked",
+	    "cross": "icon wid wid-icon-crossword",
+	    "millionaire": "icon wid wid-icon-millonaire",
+	    "sudoku": "icon wid wid-icon-sudoku",
+	    "cryptex": "icon fa fa-puzzle-piece",
+	    "hiddenpicture": "icon fa fa-puzzle-piece"
+	},
+	"lesson":"icon fa fa-list-alt",
+	"scorm":"icon wid wid-icon-scorm",
+	"workshop":"icon fa fa-tasks",
+	"assign":"icon fa fa-pencil-square-o ",
+	"trainingevent":"icon fa fa-ticket ",
+	"wiki":"icon fa fa-file-word-o",
+	"zoom":"icon wid wid-icon-zoom-metting",
+
+
+	"resource":"icon fa fa-files-o ",
+	"folder":"icon fa fa-folder-o ",
+	"label":"icon fa fa-tags",
+	"book":"icon fa fa-book",
+	"page":"icon fa fa-file-code-o",
+	"imscp":"icon fa fa-comment ",
+	"url":"icon fa fa-link",
+	"videofile":"icon men men-icon-interective-content"
+}

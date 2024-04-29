@@ -1,0 +1,196 @@
+#page-local-products-index .product-card-body{
+  height: 7rem;
+}
+#page-local-products-index .panel,
+#page-local-products-index .card.card-block.m-0{
+  background-color: unset !important;
+}
+.module {
+  width: auto;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+.module p {
+  margin: 0;
+}
+#page-local-products-index .product-card:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+}
+.rounded-medium{
+  border-radius: 0.5rem !important;
+}
+.product-card .courseimage img{
+  border-top-right-radius: 0.5rem!important;
+  border-top-left-radius: 0.5rem!important;
+}
+.cart-course-cummary{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;    
+}
+
+.card-link-secondary {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #555;
+}
+#page-local-products-index .page-content{
+  padding: 0;
+}
+#page-local-products-index .page-main{
+  background-color: #fff;
+}
+.course-overview-main-wrap .img-container img{
+  width: 100%;
+  object-fit: cover;
+}
+.course-overview-main-wrap p,
+.course-overview-main-wrap ul li{
+  font-size: 14px;
+  font-weight: 400;
+}
+.course-overview-main-wrap ul{
+  list-style-type: none;
+}
+.course-overview-main-wrap .py-5{
+  padding-top: 3rem!important;
+  padding-bottom: 3rem!important;
+}
+.course-overview-main-wrap .heading-gradient {
+  margin-top: 0;
+  margin-bottom: 0.375rem;
+  position: absolute;
+  color: #fff;
+  line-height: 1.75rem;
+  text-indent: 1.5rem;
+  padding-right: 0.75rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(to right, #bb0f24 0%, #bb0f24 100%);
+}
+.course-overview-main-wrap .heading-gradient::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 0;
+  height: 0;
+  right: -1.5rem;
+  border-style: solid;
+  -webkit-transform: rotate(360deg);
+  border-width: 2.45rem 1.5rem 0 0;
+  border-color: #bb0f24 transparent transparent transparent;
+}
+.course-duration{
+  position: relative;
+  background: #fff;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  height: 150px;
+}
+/** Add to cart button css start **/
+.add-to-cart-btn{
+  width: 100px;
+  height: 100px;
+}
+
+.add-to-cart-btn {
+  width: 126px;
+  height: 37px;
+  color: #383838;
+  font-family: 'Trebuchet MS';
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 700;
+	text-align: center;
+  cursor: pointer;
+  
+  background-color: #b1d035;
+  
+  -webkit-transition: color cubic-bezier(0.445, 0.05, 0.55, 0.95) .25s, background-color cubic-bezier(0.445, 0.05, 0.55, 0.95) .25s;
+  -moz-transition: color cubic-bezier(0.445, 0.05, 0.55, 0.95) .25s, background-color cubic-bezier(0.445, 0.05, 0.55, 0.95) .25s;
+  transition: color cubic-bezier(0.445, 0.05, 0.55, 0.95) .25s, background-color cubic-bezier(0.445, 0.05, 0.55, 0.95) .25s;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	   -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	        box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.add-to-cart-btn:hover,
+.add-to-cart-btn.in-cart {
+  color: #fff;
+  background-color: #598526;
+}
+
+.add-to-cart-btn.anim {
+  color: #fff;
+  background-color: #598526;
+}
+
+.cssanimations .add-to-cart-btn.anim {  
+background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZC11Y2dnLWdlbmVyYXRlZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjIiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjIiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjIiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+PC9zdmc+");
+  
+  -webkit-background-size: 8px 8px;
+     -moz-background-size: 8px 8px;
+       -o-background-size: 8px 8px;
+          background-size: 8px 8px;
+  
+  -webkit-animation: progress-bar-stripes .25s linear infinite;
+     -moz-animation: progress-bar-stripes .25s linear infinite;
+      -ms-animation: progress-bar-stripes .25s linear infinite;
+       -o-animation: progress-bar-stripes .25s linear infinite;
+          animation: progress-bar-stripes .25s linear infinite;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 8px 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 8px 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 8px 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 8px 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 8px 0;
+  }
+}
+/** Add to cart button css start **/

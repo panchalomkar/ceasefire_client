@@ -1,0 +1,255 @@
+.block.block_landingpage .text-center {
+    margin: 11px -9px;
+
+
+}
+.block.block_landingpage .quickicon {
+    text-align: -webkit-center;
+}
+.Rounded-Rectangle-567 {
+  width: 155px;
+  height: 34px;
+  /* margin: 5px 50px 4px 1325px; */
+  padding: 0px 20px 4px 29px;
+  border-radius: 17px;
+  margin: auto;
+  border: solid 2px #e55554;
+  background-color: #635e5d;
+}
+
+.Rounded-Rectangle-569 {
+    /* width: 1140px; */
+    height: 341px;
+    /* margin: 31px 35px 440px; */
+    padding: 22px 27px 14px 70px;
+    border-radius: 20px;
+    background-color: #794487;
+  }
+.Component-15 {
+    width: 32px;
+    height: 29px;
+    object-fit: contain;
+    /* background-color: #fff; */
+  }
+
+  .My-Trainings {
+    width: 112px;
+    height: 20px;
+    margin: 60px 40px 110px 11px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Hi-Robert-Miller {
+    width: 328px;
+    height: 37px;
+    margin: 78px 257px 39px 0;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+ /* Corse trend  */
+
+ .Rounded-Rectangle-1-copy-14 {
+  width: 1140px;
+  height: 367px;
+  margin: 1px 35px 37px 1px;
+  padding: 71px 25px 31px;
+  border-radius: 16px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.Course-Trends {
+  width: 104px;
+  height: 13px;
+  margin: 4px 869px 4px 11px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+img.Vector-Smart-Object11 {
+  width: 21px;
+  height: 21px;
+  margin: 0 11px 0 0;
+  object-fit: contain;
+  background-color: #fff;
+}
+
+.Rounded-Rectangle-1-copy-4 {
+  width: 1139px;
+  height: 45px;
+  margin: 0 36px 85px 1px;
+  padding: 12px 17px 12px 19px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #5e646f;
+}
+.Rounded-Rectangle-572 {
+  width: 250px;
+  height: 56px;
+  margin: 209px 30px 0 0;
+  padding: 22px 96px 21px 20px;
+  border: solid 1px #dadada;
+  background-color: #fff;
+}
+.circle {
+  display:inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background: #22b7a0;;
+  vertical-align:middle;
+}
+.all {
+  display:inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background: #5b76e9;;
+  vertical-align:middle;
+}
+.linkdata {
+margin-top: 45px;
+} 
+
+.author {
+  line-height: 40%;
+  display:inline-block;
+  vertical-align:middle;
+  position: relative;
+    margin-top: 12px;
+}
+.computerimage {
+  margin-top: -158px;
+  margin-left: 469px;
+  position: inherit;
+}
+.trendcourse {
+  /* margin: 1px 35px 37px 1px; */
+  /* padding: 71px 25px 31px; */
+  border-radius: 16px !important;
+  box-shadow: 0 0 3px 0 #333;
+  background-color: #fff;
+  /* width: 40%; */
+}
+
+.trendcourse:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.server_live_status .usage-details {
+  display: inline-block;
+  width: 79%;
+}
+.server_live_status .usage-header i.fa {
+  margin-right: 10px;
+}
+.server_live_status .users .legends {
+  padding: 0;
+}
+.server_live_status .legends {
+  text-align: right;
+  padding-right: 15px;
+}
+.server_live_status .legends .legend {
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+.server_live_status .progress-wrap {
+  height: 4px;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.progress {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: .70312rem;
+  background-color: #e4eaec;
+  border-radius: 0.215rem;
+  -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 10%);
+  box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 10%);
+}
+.server_live_status .progress-wrap .usage-progress-bar {
+  height: 100%;
+}
+
+.bg-success {
+  background-color: #5cb85c!important;
+}
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #62a8ea;
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+.server_live_status .progress-wrap .usage-progress-bar {
+  height: 100%;
+}
+
+.bg-warning {
+  background-color: #f0ad4e!important;
+}
+.server_live_status .progress-wrap .usage-progress-bar {
+  height: 100%;
+}
+
+.bg-danger {
+  background-color: #d9534f!important;
+}
+.server_live_status .progress-row {
+  padding: 10px 15px;
+}
+.server_live_status .usage-header {
+  display: inline-block;
+  width: 20%;
+  font-size: 1.3rem;
+}
+.server_live_status .usage-details {
+  display: inline-block;
+  width: 79%;
+}
+.server_live_status .legends .legend .color {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  vertical-align: middle;}
+  .server_live_status .usage-details .progress-label {
+    float: right;
+}

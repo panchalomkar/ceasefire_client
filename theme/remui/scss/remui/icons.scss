@@ -1,0 +1,236 @@
+$icon-width : 46px;
+$icon-width-small : 36px;
+
+$remuiicon-primary-color: rgba($brand-primary, 0.8);
+$remuiicon-secondary-color: rgba($secondary, 0.8);
+
+$icon-right-margin: 5px;
+
+body {
+    .remuiicon {
+        display: inline-flex;
+        box-sizing: border-box;
+    }
+    .nav-item#toggleFullscreen,
+    .nav-link[aria-controls="nav-drawer"] {
+        padding: 0!important;
+    }
+    &[class*="remuiicon"] {
+        div[data-region="drawer-toggle"] {
+            padding-left: 5px!important;
+        }
+         
+        .navbar {
+            .navbar-options {
+                align-items :center;
+                .no-bghover {
+                    height: $icon-width !important;
+                }
+                .right-menu {
+                    align-items :center;
+                }
+            }
+        }
+        .navbar-nav > .nav-item.no-bghover:hover {
+            background: none !important;
+        }
+        .no-bghover {
+            height: $icon-width;
+            padding-left: 0!important;
+            padding-right: 0!important;
+            &:hover {
+                background: none !important;
+            }
+        }
+        #nav-drawer {
+            .list-group {
+                .list-group-item {
+                    display: flex !important;
+                    align-items: center;
+                    > div {
+                        width: 100%;
+                    }
+
+                    .media {
+                        align-items: center;
+                    }
+                }
+            }
+            .remuiicon {
+                height: $icon-width-small;
+                width: $icon-width-small;
+                i, img {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &:not([class*="remuiicon"]) {
+        #nav-drawer {
+            .remuiicon {
+                display: block;
+            }
+        }
+    }
+}
+.light-icon {
+    background-color: #fefeff26;
+    border-radius: 50rem!important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bdbdbd96;
+    
+    transition: all .2s ease-in-out;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: scale(0);
+      background: #00000054;
+      border-radius: 100%;
+      transition: all .2s ease-in-out;
+      z-index: -2;
+    }
+    &:hover {
+        transform: scale(1);
+    }
+    &:hover::after {
+        transform: scale(1);
+    }
+}
+.dark-icon {
+    border-width: 1px;
+    border-style: solid;
+    background-color: #00000054;
+    border-color: #bdbdbd;
+
+    transition: all .2s ease-in-out;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: scale(0);
+      background: #fefeff26;
+      border-radius: 100%;
+      transition: all .2s ease-in-out;
+      z-index: -2;
+    }
+    &:hover {
+        transform: scale(1);
+    }
+    &:hover::after {
+        transform: scale(1);
+    }
+}
+.remuiicon {
+    height: $icon-width;
+    width: $icon-width;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: $icon-right-margin;
+    border-radius: $rounded-pill !important;
+
+    i {
+        margin: 0;
+    }
+
+    &:hover {
+        i {
+            font-weight: 900;
+        }
+    }
+
+    // round with background
+    &1 {
+        .remuiicon {
+            @extend .dark-icon;
+        }
+        #nav-drawer {
+            .list-group {
+                .list-group-item {
+                    .remuiicon {
+                        @extend .dark-icon;
+                        border-color: #6c6c6c;
+                    }
+                    &:hover {
+                        .remuiicon,
+                        .remuiicon::after {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // round transparent
+    &2 {
+        .remuiicon {
+            @extend .light-icon;
+        }
+        #nav-drawer {
+            .list-group {
+                .list-group-item {
+                    .remuiicon {
+                        @extend .light-icon;
+                        border-color: #6c6c6c;
+                    }
+                    &:hover {
+                        .remuiicon,
+                        .remuiicon::after {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &3 {
+        .remuiicon {
+            @extend .light-icon;
+        }
+        #nav-drawer {
+            .list-group {
+                .list-group-item {
+                    .remuiicon {
+                        @extend .dark-icon;
+                        border-color: #6c6c6c;
+                    }
+                    &:hover {
+                        .remuiicon,
+                        .remuiicon::after {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &4 {
+        .remuiicon {
+            @extend .dark-icon;
+        }
+        #nav-drawer {
+            .list-group {
+                .list-group-item {
+                    .remuiicon {
+                        @extend .light-icon;
+                        border-color: #6c6c6c;
+                    }
+                    &:hover {
+                        .remuiicon,
+                        .remuiicon::after {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

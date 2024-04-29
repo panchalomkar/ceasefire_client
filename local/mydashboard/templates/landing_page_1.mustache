@@ -1,0 +1,161 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_remui/admin_setting_tabs
+
+
+    Example context (json):
+    {
+        "tabs": [
+         {
+            "name": "tab1",
+            "active": 0,
+            "displayname": "Inactive tab1",
+            "html": "<p>Tab 1 content</p>"
+         },
+         {
+            "name": "tab2",
+            "active": 1,
+            "displayname": "Active tab2",
+            "html": "<p>Tab 2 content</p>"
+         }
+        ]
+    }
+}}
+<body class="hold-transition sidebar-mini">
+    {{#user_stats}}
+    <div class="wrapper">
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+
+                        <div class="card card-primary card-outline">
+                            <div class="card-body box-profile">
+                                <div class="text-center">
+                                    <img class="profile-user-img img-fluid img-circle"
+                                         src="{{profileimage}}"
+                                         alt="User profile picture">
+                                </div>
+
+                                <h3 class="profile-username text-center">{{fullname}}</h3>
+
+                                <span class="text-left">Department: {{department}}</span><br>
+                                <span class="text-left">Designation: {{designation}}</span><br>
+                                <span class="text-left">Emp Code: {{empcode}}</span><br>
+                                <span class="text-left">Email: {{email}}</span><br>
+                                <span class="text-left">Phone: {{phone}}</span>
+
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card card-primary card-outline">
+                            <ul class="list-group list-group-unbordered mb-3">
+
+                                <div class="text-center">
+                                    <img class="profile-user-img img-fluid img-circle"
+                                         src="https://banner2.cleanpng.com/20210125/uke/transparent-trophy-icon-brazilian-carnival-icon-award-icon-600f85abb5f985.4285129616116299957454.jpg"
+                                         alt="User profile picture">
+                                </div>
+                                <div class="available-points" style="text-align:center; font-size: 40px;">  {{available_points}}</div>
+
+                                <li class="list-group-item">
+                                    <b>Login Points</b> <a class="float-right">{{login_points}}</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Quiz Points</b> <a class="float-right">{{quiz_points}}</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Spin Wheel Points</b> <a class="float-right spin-point">{{spinwheel_points}}</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Rewards Received</b> <a class="float-right">{{rewards_received_points}}</a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="btn btn-primary btn-block"><b>Redeem Now</b></a>
+                            <a class="btn btn-primary btn-block" id="gift-reward" data-toggle="modal" data-target="#exampleModal">
+                                Gift rewards 
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-2">
+                        <div class="card card-primary card-outline">
+                            <p>This is daily quiz for your skill enhancement. You need to do this on daily basis and add more points benefits in your profile</p>
+
+                            <div class="card-body">
+                                <canvas class="chart" id="line-chart" style=" max-height: 250px; max-width: 100%;"></canvas>
+                            </div>
+
+                            <button type="button" class="btn btn-block btn-warning btn-lg">
+                                <a href="{{dailyquiz_url}}">Daily Quiz</a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-primary card-outline">
+                        <i class="fa fa-arrow-down" aria-hidden="true" style="text-align:center;"></i>
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+
+                                    <td width="300" height="300" class="the_wheel" align="center" valign="center" style="float:right;margin-top:10px; margin-right: 10px;">
+                                        <canvas id="canvas" width="300" height="300" >
+                                            <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                                        </canvas> <br />
+                                        <p>Spin the wheel and luck your change to get points benefits and redeem</p>
+                                        {{{spinbutton}}}
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    <!--MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gift your rewards to friends (Avl Pts: {{available_points}})</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchtext">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchuser">Search</button>
+                    <div id="getmatch"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="sharepoints">Send</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/user_stats}}

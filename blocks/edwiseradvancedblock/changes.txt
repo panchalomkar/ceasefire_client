@@ -1,0 +1,11 @@
+CHANGES LOG
+
+Version 1.0.1
+=============
+
+Tweak - Styling tweaks.
+Feature - Edwiser Page Builder Functional blocks support.
+
+Version 1.0.0
+=============
+Initial Version of Edwiser Advanced Block. Edwiser Advanced Block integrates with Edwiser Page builder Plugin and allow users to create dynamic html blocks.
